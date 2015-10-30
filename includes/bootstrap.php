@@ -4,7 +4,7 @@
  */
 
 
-$config_file_path = dirname( dirname( __FILE__ ) );
+$config_file_path = dirname(dirname( dirname( __FILE__ ) ));
 if ( ! file_exists( $config_file_path . '/wp-tests-config.php' ) ) {
 	// Support the config file from the root of the develop repository.
 	if ( basename( $config_file_path ) === 'phpunit' && basename( dirname( $config_file_path ) ) === 'tests' )
